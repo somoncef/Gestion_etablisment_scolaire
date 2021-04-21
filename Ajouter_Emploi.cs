@@ -84,6 +84,6 @@ namespace Gestion_etablisment_scolaire
         {
             Application.Exit();
         }
-        //somo zamel
+        
     }
 }
