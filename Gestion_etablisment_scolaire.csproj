@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7328A8B8-C0DA-40CC-A5D4-751473281604}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestion_etablisment_scolaire</RootNamespace>
+    <AssemblyName>Gestion_etablisment_scolaire</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>E:\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 2.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>F:\Downloads\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjouterDateVacanses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterDateVacanses.Designer.cs">
+      <DependentUpon>AjouterDateVacanses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterEtudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterEtudiant.Designer.cs">
+      <DependentUpon>AjouterEtudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterFillieres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterFillieres.Designer.cs">
+      <DependentUpon>AjouterFillieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterGroups.Designer.cs">
+      <DependentUpon>AjouterGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterModules.Designer.cs">
+      <DependentUpon>AjouterModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Emploi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Emploi.Designer.cs">
+      <DependentUpon>Ajouter_Emploi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsulterDateEvaluations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulterDateEvaluations.Designer.cs">
+      <DependentUpon>ConsulterDateEvaluations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsulterDateVacanses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulterDateVacanses.Designer.cs">
+      <DependentUpon>ConsulterDateVacanses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsulterEmploi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulterEmploi.Designer.cs">
+      <DependentUpon>ConsulterEmploi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsulterNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulterNotes.Designer.cs">
+      <DependentUpon>ConsulterNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etudiant.Designer.cs">
+      <DependentUpon>Etudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formateur.Designer.cs">
+      <DependentUpon>Formateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertionAbscence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertionAbscence.Designer.cs">
+      <DependentUpon>InsertionAbscence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertionDateExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertionDateExame.Designer.cs">
+      <DependentUpon>InsertionDateExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Etudiant2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Etudiant2.Designer.cs">
+      <DependentUpon>List_Etudiant2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogiinSurveillantGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogiinSurveillantGeneral.Designer.cs">
+      <DependentUpon>LogiinSurveillantGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Etudiant.Designer.cs">
+      <DependentUpon>List_Etudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogiinEtudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogiinEtudiant.Designer.cs">
+      <DependentUpon>LogiinEtudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogiinFormateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogiinFormateur.Designer.cs">
+      <DependentUpon>LogiinFormateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertionNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertionNotes.Designer.cs">
+      <DependentUpon>InsertionNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerName.cs" />
+    <Compile Include="SurveillantGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurveillantGeneral.Designer.cs">
+      <DependentUpon>SurveillantGeneral.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AjouterDateVacanses.resx">
+      <DependentUpon>AjouterDateVacanses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterEtudiant.resx">
+      <DependentUpon>AjouterEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterFillieres.resx">
+      <DependentUpon>AjouterFillieres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterGroups.resx">
+      <DependentUpon>AjouterGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterModules.resx">
+      <DependentUpon>AjouterModules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Emploi.resx">
+      <DependentUpon>Ajouter_Emploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsulterDateEvaluations.resx">
+      <DependentUpon>ConsulterDateEvaluations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsulterDateVacanses.resx">
+      <DependentUpon>ConsulterDateVacanses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsulterEmploi.resx">
+      <DependentUpon>ConsulterEmploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsulterNotes.resx">
+      <DependentUpon>ConsulterNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etudiant.resx">
+      <DependentUpon>Etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formateur.resx">
+      <DependentUpon>Formateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertionAbscence.resx">
+      <DependentUpon>InsertionAbscence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertionDateExame.resx">
+      <DependentUpon>InsertionDateExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Etudiant2.resx">
+      <DependentUpon>List_Etudiant2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogiinSurveillantGeneral.resx">
+      <DependentUpon>LogiinSurveillantGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Etudiant.resx">
+      <DependentUpon>List_Etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogiinEtudiant.resx">
+      <DependentUpon>LogiinEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogiinFormateur.resx">
+      <DependentUpon>LogiinFormateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertionNotes.resx">
+      <DependentUpon>InsertionNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurveillantGeneral.resx">
+      <DependentUpon>SurveillantGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hosdmsde_1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add-user.png" />
+    <Content Include="Resources\logout.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
