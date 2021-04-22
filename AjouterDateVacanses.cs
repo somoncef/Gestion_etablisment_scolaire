@@ -21,12 +21,11 @@ namespace Gestion_etablisment_scolaire
         public string file_namee;
         public string filee;
         public OpenFileDialog OpenFile = new OpenFileDialog();
-
         public AjouterDateVacanses()
         {
             InitializeComponent();
         }
-
+        
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (OpenFile.ShowDialog() == DialogResult.OK)
