@@ -70,6 +70,8 @@ namespace Gestion_etablisment_scolaire
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
+            try
+            {
             string name = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             int pos = name.IndexOf("\\");
             if (pos >= 0)
@@ -77,6 +79,11 @@ namespace Gestion_etablisment_scolaire
                 string UserName = name.Remove(0, pos + 1);
                 string file = @"C:\Users\" + UserName + "\\Desktop\\Emploi.pdf";
                 Process.Start(file);
+            }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
             }
         }
 
