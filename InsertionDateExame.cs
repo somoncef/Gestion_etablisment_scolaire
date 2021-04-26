@@ -107,5 +107,10 @@ namespace Gestion_etablisment_scolaire
         {
             Application.Exit();
         }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -13,8 +13,8 @@ namespace Gestion_etablisment_scolaire
 {
     public partial class LogiinEtudiant : Form
     {
-        public static string conn = @"Data Source=DESKTOP-SQH9NT6\SQLEXPRESS;Initial Catalog=Gestion_etablisment_scolaire;Integrated Security=True";
-        public SqlConnection cone = new SqlConnection(conn);
+        public static string str = ServerName.conn;
+        public SqlConnection cone = new SqlConnection(str);
         public SqlDataReader sdr;
         public static string login;
 

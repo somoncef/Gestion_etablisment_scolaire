@@ -17,9 +17,32 @@ namespace Gestion_etablisment_scolaire
             InitializeComponent();
         }
 
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        private void guna2Button4_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CrystalReport1 C1 = new CrystalReport1();
+                C1.SetParameterValue("Nom_Groupe", guna2TextBox1.Text.ToString());
+                crystalReportViewer1.ReportSource = C1;
+                crystalReportViewer1.Refresh();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SurveillantGeneral S1 = new SurveillantGeneral();
+            S1.Show();
         }
     }
 }

@@ -119,6 +119,12 @@
     <Compile Include="ConsulterNotes.Designer.cs">
       <DependentUpon>ConsulterNotes.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Etudiant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,23 +149,17 @@
     <Compile Include="InsertionDateExame.Designer.cs">
       <DependentUpon>InsertionDateExame.cs</DependentUpon>
     </Compile>
-    <Compile Include="List_Etudiant2.cs">
+    <Compile Include="List_Etudiant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="List_Etudiant2.Designer.cs">
-      <DependentUpon>List_Etudiant2.cs</DependentUpon>
+    <Compile Include="List_Etudiant.Designer.cs">
+      <DependentUpon>List_Etudiant.cs</DependentUpon>
     </Compile>
     <Compile Include="LogiinSurveillantGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LogiinSurveillantGeneral.Designer.cs">
       <DependentUpon>LogiinSurveillantGeneral.cs</DependentUpon>
-    </Compile>
-    <Compile Include="List_Etudiant.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="List_Etudiant.Designer.cs">
-      <DependentUpon>List_Etudiant.cs</DependentUpon>
     </Compile>
     <Compile Include="LogiinEtudiant.cs">
       <SubType>Form</SubType>
@@ -224,6 +224,10 @@
     <EmbeddedResource Include="ConsulterNotes.resx">
       <DependentUpon>ConsulterNotes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Etudiant.resx">
       <DependentUpon>Etudiant.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,14 +240,11 @@
     <EmbeddedResource Include="InsertionDateExame.resx">
       <DependentUpon>InsertionDateExame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="List_Etudiant2.resx">
-      <DependentUpon>List_Etudiant2.cs</DependentUpon>
+    <EmbeddedResource Include="List_Etudiant.resx">
+      <DependentUpon>List_Etudiant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogiinSurveillantGeneral.resx">
       <DependentUpon>LogiinSurveillantGeneral.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="List_Etudiant.resx">
-      <DependentUpon>List_Etudiant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogiinEtudiant.resx">
       <DependentUpon>LogiinEtudiant.cs</DependentUpon>
@@ -283,6 +284,9 @@
   <ItemGroup>
     <Content Include="Resources\add-user.png" />
     <Content Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
