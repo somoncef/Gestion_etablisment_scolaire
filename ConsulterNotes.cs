@@ -56,21 +56,33 @@ namespace Gestion_etablisment_scolaire
                     }
                     else if (guna2DataGridView1.Rows[i].Cells[1].ToString() != ""
                         && guna2DataGridView1.Rows[i].Cells[2].ToString() != ""
-                        && guna2DataGridView1.Rows[i].Cells[3].ToString() != "")
+                        && guna2DataGridView1.Rows[i].Cells[3].ToString() != ""
+                        && guna2DataGridView1.Rows[i].Cells[4].ToString() == "")
                     {
                         guna2DataGridView1.Rows[i].Cells[6].Value = (float.Parse(guna2DataGridView1.Rows[i].Cells[1].Value.ToString()) + float.Parse(guna2DataGridView1.Rows[i].Cells[2].Value.ToString()) + float.Parse(guna2DataGridView1.Rows[i].Cells[3].Value.ToString())) / 3;
                         guna2DataGridView1.Rows[i].Cells[7].Value = (float.Parse(guna2DataGridView1.Rows[i].Cells[5].Value.ToString()) * int.Parse(guna2DataGridView1.Rows[i].Cells[6].Value.ToString()));
                     }
                     else if (guna2DataGridView1.Rows[i].Cells[1].ToString() != ""
-                        && guna2DataGridView1.Rows[i].Cells[2].ToString() != "")
+                        && guna2DataGridView1.Rows[i].Cells[2].ToString() != ""
+                        && guna2DataGridView1.Rows[i].Cells[3].ToString() == ""
+                        && guna2DataGridView1.Rows[i].Cells[4].ToString() == "")
                     {
                         guna2DataGridView1.Rows[i].Cells[6].Value = (float.Parse(guna2DataGridView1.Rows[i].Cells[1].Value.ToString()) + float.Parse(guna2DataGridView1.Rows[i].Cells[2].Value.ToString())) / 2;
                         guna2DataGridView1.Rows[i].Cells[7].Value = (float.Parse(guna2DataGridView1.Rows[i].Cells[5].Value.ToString()) * int.Parse(guna2DataGridView1.Rows[i].Cells[6].Value.ToString()));
                     }
-                    else
+                    else if (guna2DataGridView1.Rows[i].Cells[1].ToString() != ""
+                        && guna2DataGridView1.Rows[i].Cells[2].ToString() == ""
+                        && guna2DataGridView1.Rows[i].Cells[3].ToString() == ""
+                        && guna2DataGridView1.Rows[i].Cells[4].ToString() == "")
                     {
                         guna2DataGridView1.Rows[i].Cells[6].Value = (float.Parse(guna2DataGridView1.Rows[i].Cells[1].Value.ToString()));
                         guna2DataGridView1.Rows[i].Cells[7].Value = (float.Parse(guna2DataGridView1.Rows[i].Cells[5].Value.ToString()) * int.Parse(guna2DataGridView1.Rows[i].Cells[6].Value.ToString()));
+                    }
+                    else
+                    {
+                        guna2DataGridView1.Rows[i].Cells[6].Value = 0;
+                        guna2DataGridView1.Rows[i].Cells[7].Value = 0;
+
                     }
                 }
                 cone.Close();

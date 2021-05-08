@@ -149,6 +149,12 @@
     <Compile Include="InsertionDateExame.Designer.cs">
       <DependentUpon>InsertionDateExame.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertionNotes2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertionNotes2.Designer.cs">
+      <DependentUpon>InsertionNotes2.cs</DependentUpon>
+    </Compile>
     <Compile Include="List_Etudiant.cs">
       <SubType>Form</SubType>
     </Compile>
