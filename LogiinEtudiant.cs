@@ -45,7 +45,7 @@ namespace Gestion_etablisment_scolaire
                 sdr = comm.ExecuteReader();
                 while (sdr.Read())
                 {
-                    if (guna2TextBox1.Text == sdr[0].ToString() && guna2TextBox2.Text == sdr[1].ToString())
+                    if (guna2TextBox1.Text == sdr[8].ToString() && guna2TextBox2.Text == sdr[9].ToString())
                     {
                         LogiinEtudiant.login = guna2TextBox1.Text;
                         Etudiant E = new Etudiant();
