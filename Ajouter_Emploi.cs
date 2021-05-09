@@ -14,6 +14,7 @@ namespace Gestion_etablisment_scolaire
 {
     public partial class Ajouter_Emploi : Form
     {
+        //hello somo
         public static string str = ServerName.conn;
         public SqlConnection cone = new SqlConnection(str);
         public SqlDataReader SDR;
@@ -83,6 +84,11 @@ namespace Gestion_etablisment_scolaire
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
